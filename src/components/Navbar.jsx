@@ -8,7 +8,7 @@ export default function Navbar(){
 
   return <>
     <div className="flex justify-center">
-      <nav className="py-5 w-5/6 flex justify-between items-center gap-4" >
+      <nav className="pt-5 lg:pt-10 w-3/4 flex justify-between items-center gap-4" >
 
         {/* setting log  */}
         <div style={{
@@ -21,19 +21,19 @@ export default function Navbar(){
 
         {/* butttons show only on bigscreen */}
         <div className={`hidden lg:flex gap-4`}>
-            <Button label={"About Us"}/>
+            <Button label={"About Us"} />
             <Button label={"Services"}/>
             <Button label={"Contacts"}/>
             <Button label={"Blogs"}/>
-            <Button label={"Contact US"} bg={"purple"}/>
+            <Button label={"Contact US"} className={`bg-purple-900 text-white`}/>
         </div>
 
         {/* buttons for mid and low screen */}
         <div className={`lg:hidden flex gap-4`}>
-            <Button label={"Contact US"} bg={"purple"} className={`hidden sm:inline-block`}/>
+            <Button label={"Contact US"} className={`hidden sm:inline-block bg-purple-900 text-white`}/>
             <Button onClick={()=>{
                 setOpen(!open);
-            }} label="="/>
+            }} label="☰"/>
         </div>
       </nav>
     </div>
@@ -53,7 +53,7 @@ export default function Navbar(){
         <Button label={"Services"}/>
         <Button label={"Contacts"}/>
         <Button label={"Blogs"}/>
-        <Button label={"Contact US"} bg={"purple"}/>
+        <Button label={"Contact US"} className={`bg-purple-900 text-white`}/>
         <Button onClick={()=>{
             setOpen(!open);
         }} label="x"/>
