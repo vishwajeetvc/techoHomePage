@@ -19,7 +19,7 @@ export default function Hero() {
     <div className="flex justify-center md:py-[100px] ">
       <div className="w-5/6 md:w-3/4 lg:flex gap-9 items-center">
         <div left className="w-full">
-          <h1 className="text-3xl font-bold py-4 md:text-[60px] md:leading-tight md:py-8">
+          <h1 className="text-3xl font-bold text-[24px] text-center md:text-start  md:text-[60px] leading-tight py-8">
             Empowering Businesses with Cutting-Edge IT Solution .
           </h1>
           <p className="text-sm py-3">
