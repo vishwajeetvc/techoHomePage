@@ -27,7 +27,7 @@ const Services = () => {
           <h1 className="font-bold text-2xl md:text-[50px] mb-10 leading-tight">
             Our Services : Make every step user-centric
           </h1>
-          <p className="text-gray-600 mb-20">
+          <p className="text-gray-600 mb-0 sm:mb-20">
             Lorem ipsum dolor sit amet, consectetur adipis elit
           </p>
         </div>

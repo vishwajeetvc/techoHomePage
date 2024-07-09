@@ -8,7 +8,7 @@ export default function Navbar(){
 
   return <>
     <div className="flex justify-center">
-      <nav className="pt-5 lg:pt-10 w-3/4 flex justify-between items-center gap-4" >
+      <nav className="pt-5 lg:pt-10 w-5/6 sm:w-3/4 flex justify-between items-center gap-4" >
 
         {/* setting log  */}
         <div style={{
@@ -39,7 +39,7 @@ export default function Navbar(){
     </div>
 
     {/* right nav bar */}
-    <div className={`${open ? "block" :"hidden" } w-[250px] p-4 absolute bg-purple-100 h-full top-0 right-0`}>
+    <div className={`${open ? "block" :"hidden" } w-[250px] p-4 absolute bg-purple-100 h-full top-0 right-0 z-10`}>
       <div className={`flex flex-col gap-4`}>
         <div className={`self-center my-5`} 
           style={{

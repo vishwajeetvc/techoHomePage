@@ -5,7 +5,7 @@ import line from "../assets/line.png";
 function NumBox({ num, text, text2 }) {
   return (
     <div className={`flex items-center gap-3 text-gray-700`}>
-      <div className="text-4xl font-bold">{num}</div>
+      <div className="text-2xl w-[60px] sm:text-4xl font-bold">{num}</div>
       <div className="text-sm">
         <p>{text}</p>
         <p>{text2}</p>
@@ -22,7 +22,7 @@ export default function Hero() {
           <h1 className="font-bold text-[25px] md:text-start  md:text-[60px] leading-tight py-10">
             Empowering Businesses with Cutting-Edge IT Solution .
           </h1>
-          <p className="text-sm py-3">
+          <p className="text-sm py-3 sm:text-[20px] text-gray-600">
             Boost Efficiency, Security, and Innovation.
           </p>
 
@@ -66,7 +66,7 @@ export default function Hero() {
             <NumBox num="50+" text="Successful" text2="Clients" />
           </div>
         </div>
-        <div right className="w-[100%] lg:w-[60%] flex justify-center">
+        <div right className="w-[100%] lg:w-[60%] flex justify-center ml-[-5px] sm:ml-[0px]">
           <img src={`${img}`} alt="" />
         </div>
       </div>
