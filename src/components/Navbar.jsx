@@ -8,7 +8,7 @@ export default function Navbar(){
 
   return <>
     <div className="flex justify-center">
-      <nav className="pt-5 lg:pt-10 w-5/6 sm:w-3/4 flex justify-between items-center gap-4" >
+      <nav className="pt-5 lg:pt-10 w-5/6 flex justify-between items-center gap-4" >
 
         {/* setting log  */}
         <div style={{

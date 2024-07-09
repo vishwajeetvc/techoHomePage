@@ -8,7 +8,7 @@ import img6 from "../assets/img6.png";
 function Service({ img, heading, children,className }) {
   return (
     <>
-      <div className={`flex items-center flex-col sm:w-[470px] text-center bg-white p-[10px] sm:p-[50px] py-[40px]  w-[280px] ${className}`}>
+      <div className={`flex items-center flex-col sm:w-[370px] 2xl:w-[400px] text-center bg-white  sm:p-[30px] py-[20px]  w-[280px] ${className}`}>
         <div className="">
           <img src={`${img}`} />
         </div>
@@ -22,7 +22,7 @@ function Service({ img, heading, children,className }) {
 const Services = () => {
   return (
     <div className="w-full  flex justify-center py-[100px]">
-      <div className="w-3/4 ">
+      <div className="w-3/4 sm:w-5/6 ">
         <div top className="text-center ">
           <h1 className="font-bold text-2xl md:text-[50px] mb-10 leading-tight">
             Our Services : Make every step user-centric

@@ -5,7 +5,7 @@ import line from "../assets/line.png";
 function NumBox({ num, text, text2 }) {
   return (
     <div className={`flex items-center gap-3 text-gray-700`}>
-      <div className="text-2xl w-[60px] sm:text-4xl font-bold">{num}</div>
+      <div className="text-2xl w-[65px] sm:w-auto sm:text-4xl font-bold">{num}</div>
       <div className="text-sm">
         <p>{text}</p>
         <p>{text2}</p>
@@ -17,7 +17,7 @@ function NumBox({ num, text, text2 }) {
 export default function Hero() {
   return (
     <div className="flex justify-center md:py-[100px] ">
-      <div className="w-5/6 md:w-3/4 lg:flex gap-9 items-center">
+      <div className="w-5/6 lg:flex gap-9 items-center">
         <div left className="w-full">
           <h1 className="font-bold text-[25px] md:text-start  md:text-[60px] leading-tight py-10">
             Empowering Businesses with Cutting-Edge IT Solution .

@@ -5,7 +5,7 @@ import review from "../assets/review.png";
 function Comment({ img, para, name }) {
   return (
     <>
-      <div className=" p-4 sm:w-[600px]">
+      <div className=" p-4 sm:w-[500px]">
         <div className="sm:flex sm:items-center">
 
           <div className="sm:pr-5 ">
@@ -19,7 +19,7 @@ function Comment({ img, para, name }) {
             <div>
               <p className="text-sm text-gray-600 sm:text-sm py-4">{para}</p>
             </div>
-            <p className=" font-bold  pt-3 sm:pt-7">{name}</p>
+            <p className=" font-bold  ">{name}</p>
           </div>
 
         </div>
@@ -43,7 +43,7 @@ export default function Comments() {
             </h1>
           </div>
 
-          <div className="my-5 lg:mt-20 2xl:flex-row lg:gap-10 gap-5 flex flex-col items-center">
+          <div className="my-5 lg:mt-20 xl:flex-row lg:gap-10 gap-5 flex flex-col items-center">
             <Comment
               img={`${girl}`}
               name={"- Vishwajeet"}
