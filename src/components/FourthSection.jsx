@@ -3,7 +3,7 @@ import puzzle from "../assets/puzzle.png";
 import lock from "../assets/lock.png";
 function Card({ img, heading, para }) {
   return (
-    <div className="w-[320px] ">
+    <div className="w-[250px] sm:w-[320px]">
       <div className={`p-4`}>
         <div image className="my-8">
           <img src={`${img}`} className="w-[40px]"/>

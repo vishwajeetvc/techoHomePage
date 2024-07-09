@@ -8,7 +8,7 @@ import img6 from "../assets/img6.png";
 function Service({ img, heading, children,className }) {
   return (
     <>
-      <div className={`flex items-center flex-col w-[470px] text-center bg-white p-[50px] ${className}`}>
+      <div className={`flex items-center flex-col sm:w-[470px] text-center bg-white p-[10px] sm:p-[50px] py-[40px]  w-[280px] ${className}`}>
         <div className="">
           <img src={`${img}`} />
         </div>
@@ -33,27 +33,27 @@ const Services = () => {
         </div>
         <div bottom>
           <div className="flex flex-wrap justify-center">
-            <Service img={`${img1}`} heading={"web Development"} className={`border-r-gray-300 border-r border-b-gray-300 border-b`}>
+            <Service img={`${img1}`} heading={"web Development"} className={`border-r-gray-300  lg:border-r border-b-gray-300 border-b`}>
               Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec,
               proin faucibus nibh et sagittis a. Lacinia purus ac amet.
             </Service>
-            <Service img={`${img2}`} heading={"web Development"}className={`border-r-gray-300 border-r border-b-gray-300 border-b`}>
+            <Service img={`${img2}`} heading={"web Development"}className={`border-r-gray-300 lg:border-r border-b-gray-300 border-b`}>
               Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec,
               proin faucibus nibh et sagittis a. Lacinia purus ac amet.
             </Service>
             <Service img={`${img5}`} heading={"web Development"} className={`border-b-gray-300 border-b`}>
+              Lorem 2 ipsum dolor sit amet, consectetur adipis elit. Sit enim nec,
+              proin faucibus nibh et sagittis a. Lacinia purus ac amet.
+            </Service>
+            <Service img={`${img3}`} heading={"web Development"} className={`border-r-gray-300 lg:border-r border-b lg:border-b-white `}>
               Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec,
               proin faucibus nibh et sagittis a. Lacinia purus ac amet.
             </Service>
-            <Service img={`${img3}`} heading={"web Development"} className={`border-r-gray-300 border-r `}>
+            <Service img={`${img4}`} heading={"web Development"} className={`border-r-gray-300 lg:border-r `}>
               Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec,
               proin faucibus nibh et sagittis a. Lacinia purus ac amet.
             </Service>
-            <Service img={`${img4}`} heading={"web Development"} className={`border-r-gray-300 border-r `}>
-              Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec,
-              proin faucibus nibh et sagittis a. Lacinia purus ac amet.
-            </Service>
-            <Service img={`${img6}`} heading={"web Development"}>
+            <Service img={`${img6}`} heading={"web Development"} className={`border-t md:border-t-white`}>
               Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec,
               proin faucibus nibh et sagittis a. Lacinia purus ac amet.
             </Service>

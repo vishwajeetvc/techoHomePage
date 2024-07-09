@@ -1,6 +1,6 @@
 import Button from "./Button";
 import img from "../assets/img.png";
-import line from "../assets/line.png"
+import line from "../assets/line.png";
 
 function NumBox({ num, text, text2 }) {
   return (
@@ -19,13 +19,15 @@ export default function Hero() {
     <div className="flex justify-center md:py-[100px] ">
       <div className="w-5/6 md:w-3/4 lg:flex gap-9 items-center">
         <div left className="w-full">
-          <h1 className="text-3xl font-bold text-[24px] text-center md:text-start  md:text-[60px] leading-tight py-8">
+          <h1 className="font-bold text-[25px] md:text-start  md:text-[60px] leading-tight py-10">
             Empowering Businesses with Cutting-Edge IT Solution .
           </h1>
           <p className="text-sm py-3">
             Boost Efficiency, Security, and Innovation.
           </p>
-          <form className="flex md:inline-block justify-between px-2 py-2 rounded-xl md:my-4  sm:w-auto border ">
+
+          {/*
+          <form className="flex md:inine-block  md:w-[450px] bg-indigo-50 justify-between px-2 py-2 rounded-xl md:my-4  sm:w-auto border ">
             <input
               type="text"
               placeholder="Enter email address"
@@ -39,15 +41,33 @@ export default function Hero() {
               label={`+`}
               className={`sm:hidden bg-purple-900 text-white`}
             ></Button>
+          </form>*/}
+
+
+          <form className="flex md:inine-block  md:w-[450px] justify-between px-2 py-2 rounded-xl md:my-4  sm:w-auto border  relative overflow-hidden">
+            <input
+              type="text"
+              placeholder="example@gmail.com"
+              className="p-3 outline-none lg:w-[300px]"
+            />
+            <Button
+              label={`Contact`}
+              className={`hidden  sm:inline-block bg-purple-900 text-white`}
+            />
+            <Button
+              label={`+`}
+              className={`sm:hidden bg-purple-900 text-white absolute right-2`}
+            ></Button>
           </form>
+
           <div className={`flex flex-col gap-5 py-5 md:flex-row sm:gap-8`}>
             <NumBox num="2389" text="Project" text2="Delevered" />
-            <img src={`${line}`} className="hidden md:block"/>
+            <img src={`${line}`} className="hidden md:block" />
             <NumBox num="50+" text="Successful" text2="Clients" />
           </div>
         </div>
         <div right className="w-[100%] lg:w-[60%] flex justify-center">
-            <img src={`${img}`} alt="" />
+          <img src={`${img}`} alt="" />
         </div>
       </div>
     </div>

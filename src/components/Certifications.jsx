@@ -3,7 +3,7 @@ import arrow from "../assets/arrow.png";
 import Button from "./Button";
 function Card({ img, mainHeading, heading, para }) {
   return (
-    <div className="bg-white p-5 rounded-xl w-[300px] shrink-0">
+    <div className="bg-white p-5 rounded-xl w-[280px] sm:w-[300px] shrink-0">
       <div image>
         <img src={`${img}`} alt="course" />
       </div>
@@ -29,7 +29,7 @@ function Card({ img, mainHeading, heading, para }) {
 export default function Certifications() {
   return (
     <div className="py-[100px] flex justify-center bg-[#F8FAFC] ">
-      <div className="w-5/6">
+      <div className="w-7/8 sm:w-5/6">
         <div text className="text-center">
           <h3 className=" text-indigo-600 py-4">Certifications</h3>
           <h1 className=" font-bold text-[18px] md:text-[36px] lg:text-[40px]">
