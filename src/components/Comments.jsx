@@ -5,7 +5,7 @@ import review from "../assets/review.png";
 function Comment({ img, para, name }) {
   return (
     <>
-      <div className=" p-4 sm:w-[500px]">
+      <div className=" p-4 sm:w-[700px]">
         <div className="sm:flex sm:items-center">
 
           <div className="sm:pr-5 ">
@@ -30,11 +30,10 @@ function Comment({ img, para, name }) {
 
 export default function Comments() {
   return (
-    <>
       <div className="flex justify-center py-[100px]">
-        <div className={`w-4/6 `}>
+        <div className={`w-5/8`}>
 
-          <div text className="text-center">
+          <div className="text-center">
             <h3 className=" text-indigo-600 py-4">
               3940+ Happy M24 Techspace Clients
             </h3>
@@ -57,6 +56,5 @@ export default function Comments() {
           </div>
         </div>
       </div>
-    </>
   );
 }

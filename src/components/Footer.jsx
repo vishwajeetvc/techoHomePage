@@ -4,8 +4,9 @@ import Button from "./Button";
 export default function Footer() {
   return (
     <>
-      <div className="flex justify-center py-[100px]">
+      <div className="flex justify-center py-[100px] bg-gray-50">
         <div className="w-5/6 xl:flex xl:justify-around xl:flex-row items-center ">
+
           <div className="first lg:w-[400px] sm:w-[350px]">
             <div>
               <img src={`${logo}`} />

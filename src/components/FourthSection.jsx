@@ -5,12 +5,12 @@ function Card({ img, heading, para }) {
   return (
     <div className="w-[250px] sm:w-[320px]">
       <div className={`p-4`}>
-        <div image className="my-8">
+        <div className="my-8 flex md:block justify-center">
           <img src={`${img}`} className="w-[40px]"/>
         </div>
-        <div texts>
-          <h2 className="font-bold py-4">{heading}</h2>
-          <p className="text-sm text-gray-600">{para}</p>
+        <div>
+          <h2 className="font-bold py-4 text-center md:text-left">{heading}</h2>
+          <p className="text-sm text-gray-600 text-center md:text-left">{para}</p>
         </div>
       </div>
     </div>

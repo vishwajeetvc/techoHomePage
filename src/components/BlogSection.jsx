@@ -12,7 +12,6 @@ function Blog({img, content,tag}){
         <p className="text-[18px] font-bold leading-tight py-4">{content}</p>
         <p className="text-indigo-800 text-[12px]">{tag}</p>
       </div>
-
     </div>
   </>)
 }
@@ -22,7 +21,7 @@ export default function Blogs(){
     <div className="flex justify-center bg-[#F8FAFC] py-[100px]">
       <div className="w-5/6">
 
-          <div text className="text-center pb-10">
+          <div className="text-center pb-10">
             <h3 className=" text-indigo-600 py-4">
               Learn new technology
             </h3>
