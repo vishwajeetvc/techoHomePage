@@ -25,7 +25,7 @@ export default function Navbar() {
             <Link setOpen={setOpen} to="/ourservices" label="Our Services" />
             <Link setOpen={setOpen} to="/blog" label="Blogs" />
             <Link setOpen={setOpen} to="/contact" label="Contact Us" />
-            <Link setOpen={setOpen} to="/about" label="About Us" />
+            <Link setOpen={setOpen} to="/" label="About Us" />
           </div>
 
           {/* buttons for mid and low screen */}
