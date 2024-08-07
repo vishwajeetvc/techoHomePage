@@ -27,7 +27,7 @@ export default function About() {
 	</>)
 }
 function Sections({ datas }) {
-	return <div className="flex flex-col my-2">
+	return <div className="flex flex-col my-2 xl:px-20">
 		{
 			datas.map((s, i) =>
 				<Section key={i} index={i} img={s.img} title={s.title} para={s.para} heading={s.heading} />
