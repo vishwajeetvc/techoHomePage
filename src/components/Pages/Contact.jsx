@@ -38,7 +38,7 @@ function ContactInfo() {
           {/*left*/}
           <div className="bg-purple-900 rounded-lg px-3 py-4 md:p-[50px] text-white overflow-hidden text-[14px] md:text-[20px] relative md:w-[45%]">
             <div>
-              <h1 className="font-bold md:text-[30px]">Contact Information</h1>
+              <h1 className="font-bold text-[32px] md:text-[30px]">Contact Information</h1>
               <p className="py-1 text-gray-200/90">Say something to start a live chat!</p>
             </div>
             <div className="md:mt-[50px] flex flex-col gap-5 md:gap-10">

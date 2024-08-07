@@ -12,14 +12,14 @@ export default function Footer() {
               <img src={`${logo}`} />
             </div>
             <div>
-              <p className="py-8 text-gray-500 px-4">
+              <p className="py-8 text-gray-500 text-[14px] sm:text-[18px] px-4">
                 M24 tech space gives you the best things you need to create a
                 truly professional website.
               </p>
             </div>
           </div>
 
-          <div className="second flex lg:w-[400px] xl:justify-between">
+          <div className="second flex lg:w-[400px] xl:justify-between text-[14px] sm:text-[18px]">
             <div className="left  ">
               <h2 className="text-gray-600 p-4">Company</h2>
               <div>
@@ -38,30 +38,30 @@ export default function Footer() {
             <div className="right  ">
               <h2 className="text-gray-600 p-4">Help</h2>
               <div>
-                <Button label="Customer Support" className={``} />
+                <Button label="Customer Support" className={`text-left`} />
               </div>
               <div>
-                <Button label="Delivery Details" className={``} />
+                <Button label="Delivery Details" className={`text-left`} />
               </div>
               <div>
-                <Button label="Terms & Conditions" className={``} />
+                <Button label="Terms & Conditions" className={`text-left`} />
               </div>
               <div>
-                <Button label="Privacy Policy" className={``} />
+                <Button label="Privacy Policy" className={`text-left`} />
               </div>
             </div>
           </div>
           <div className="Third pt-4 sm:w-[350px] px-4">
-            <h2 className="text-gray-600 py-4 px-1">NEWS LETTER</h2>
+            <h2 className="text-gray-600 py-4 px-1 text-[14px] md:text-[18px] ">NEWS LETTER</h2>
             <form className="flex flex-col gap-2">
               <input
                 type="text"
                 placeholder="Enter your email"
-                className="border p-3 rounded-lg"
+                className="border p-3 rounded-lg text-[14px] md:text-[18px] "
               />
               <Button
                 label="Subscribe Now"
-                className={`px-8 bg-purple-800 text-white`}
+                className={`px-8 bg-purple-800 text-[14px] md:text-[18px]  text-white`}
               />
             </form>
 
