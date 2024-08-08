@@ -9,13 +9,19 @@ export default function About() {
 		{
 			title: `Our Mission`,
 			heading: `Meet intensively to discussabout the next project`,
-			para: `Help facilitate personalized conversations for B2C brands. Building genuine connections by enabling personalized conversational commerce. Developing powerfull UI/ UX human interface`,
+			para: `Help facilitate personalized genuine connections by enabling personalized conversational commerce. Developing powerfull UI/ UX human interface`,
 			img: about1,
 		},
 		{
 			title: `Our Mission`,
 			heading: `Meet intensively to discussabout the next project`,
-			para: `Help facilitate personalized conversations for B2C brands. Building genuine connections by enabling personalized conversational commerce. Developing powerfull UI/ UX human interface`,
+			para: `Help facilitate personalized genuine connections by enabling personalized conversational commerce. Developing powerfull UI/ UX human interface`,
+			img: about1,
+		},
+		{
+			title: `Our Mission`,
+			heading: `Meet intensively to discussabout the next project`,
+			para: `Help facilitate personalized genuine connections by enabling personalized conversational commerce. Developing powerfull UI/ UX human interface`,
 			img: about1,
 		},
 	]

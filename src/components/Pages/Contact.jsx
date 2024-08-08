@@ -36,9 +36,9 @@ function ContactInfo() {
       <Body innerClassName={"w-[95%] my-5 flex justify-center"}>
         <div className="p-2 border-purple-200 bg-white rounded-xl  border md:flex md:w-[90%] 2xl:w-[70%] md:gap-5">
           {/*left*/}
-          <div className="bg-purple-900 rounded-lg px-3 py-4 md:p-[50px] text-white overflow-hidden text-[14px] md:text-[20px] relative md:w-[45%]">
+          <div className=" sm:p-5  bg-purple-900 rounded-lg px-3 py-4 md:p-[50px] text-white overflow-hidden text-[14px] md:text-[20px] relative md:w-[45%]">
             <div>
-              <h1 className="font-bold text-[32px] md:text-[30px]">Contact Information</h1>
+              <h1 className="font-bold text-[32px] sm:text-[42px]">Contact Information</h1>
               <p className="py-1 text-gray-200/90">Say something to start a live chat!</p>
             </div>
             <div className="md:mt-[50px] flex flex-col gap-5 md:gap-10">
@@ -121,7 +121,7 @@ function ContactInfo() {
                 placeholder={"Write your message"}
               />
               <div className="flex py-8 flex-row-reverse">
-                <Button label="Send Message" className={'bg-purple-900 text-white'}/>
+                <Button label="Send Message" className={'bg-purple-900 text-white'} />
               </div>
             </form>
           </div>

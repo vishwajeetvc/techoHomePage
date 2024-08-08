@@ -11,15 +11,16 @@ export default function Navbar() {
       <div className="flex justify-center">
         <nav className="pt-5 lg:pt-10 w-5/6 flex justify-between items-center gap-4">
           {/* setting log  */}
-          <div
-            style={{
-              height: "56px",
-              width: "164px",
-              backgroundRepeat: "no-repeat",
-              backgroundImage: `url(${image})`,
-            }}
-          ></div>
-
+          <NavLink to="/">
+            <div
+              style={{
+                height: "56px",
+                width: "164px",
+                backgroundRepeat: "no-repeat",
+                backgroundImage: `url(${image})`,
+              }}
+            ></div>
+          </NavLink>
           {/* butttons show only on bigscreen */}
           <div className={`hidden lg:flex gap-4`}>
             <Link setOpen={setOpen} to="/ourservices" label="Our Services" />
@@ -72,19 +73,19 @@ export default function Navbar() {
   );
 }
 
-function Link({ to, label, setOpen, className }) {
+export function Link({ to, label, setOpen, className }) {
   return (
     <>
       <NavLink
         to={to}
         onClick={() => {
-          setOpen(!open);
+          setOpen?.(!open);
         }}
         className={({ isActive }) =>
-          `${isActive ? "bg-purple-800 text-white rounded-lg" : ""} ${className}`
+          `${isActive ? `${className} bg-purple-800 inline-block text-white rounded-lg ` : `${className}`} `
         }
       >
-        <Button label={label} />
+        <Button label={label} className={`${className}`} />
       </NavLink>
     </>
   );

@@ -1,4 +1,6 @@
+import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
+import { Link } from "./Navbar";
 import Button from "./Button";
 
 export default function Footer() {
@@ -9,7 +11,9 @@ export default function Footer() {
 
           <div className="first lg:w-[400px] sm:w-[350px]">
             <div>
-              <img src={`${logo}`} />
+              <NavLink to="/">
+                <img src={`${logo}`} />
+              </NavLink>
             </div>
             <div>
               <p className="py-8 text-gray-500 text-[14px] sm:text-[18px] px-4">
@@ -20,34 +24,34 @@ export default function Footer() {
           </div>
 
           <div className="second flex lg:w-[400px] xl:justify-between text-[14px] sm:text-[18px]">
-            <div className="left  ">
+            <div className="left  flex flex-col gap-2 ">
               <h2 className="text-gray-600 p-4">Company</h2>
               <div>
-                <Button label="About Us" className={``} />
+                <Link to="/ourservices" label="Our Services" className={`w-full block text-left`} />
               </div>
               <div>
-                <Button label="Contact" className={``} />
+                <Link to="/blog" label="Blogs" className={`w-full block text-left`} />
               </div>
               <div>
-                <Button label="Services" className={``} />
+                <Link to="/contact" label="Contact Us" className={`w-full block text-left`} />
               </div>
               <div>
-                <Button label="Blogs" className={``} />
+                <Link to="/about" label="About Us" className={`w-full block text-left`} />
               </div>
             </div>
-            <div className="right  ">
+            <div className="right flex flex-col gap-2">
               <h2 className="text-gray-600 p-4">Help</h2>
               <div>
-                <Button label="Customer Support" className={`text-left`} />
+                <Button label="Customer Support" className={`w-full block text-left`} />
               </div>
               <div>
-                <Button label="Delivery Details" className={`text-left`} />
+                <Button label="Delivery Details" className={`w-full block text-left`} />
               </div>
               <div>
-                <Button label="Terms & Conditions" className={`text-left`} />
+                <Button label="Terms & Conditions" className={`w-full block text-left`} />
               </div>
               <div>
-                <Button label="Privacy Policy" className={`text-left`} />
+                <Button label="Privacy Policy" className={`w-full block text-left`} />
               </div>
             </div>
           </div>
