@@ -4,6 +4,5 @@ hello
 "Hello"
 
 ```
-hello
 
 ```
